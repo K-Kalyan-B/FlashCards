@@ -19,7 +19,7 @@ body { /* Optional: To ensure text is visible on a black background */
   justify-content: center;
 }
 .progress-container {
-  width: 500%;
+  width: 100%;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -30,4 +30,16 @@ body { /* Optional: To ensure text is visible on a black background */
   height: 100%;
   background-color: gray;
   transition: width 0.5s ease-in-out;
+}
+.flash-card-container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  min-height: 300px;
+  margin: none;
+  min-width: 500px;
+  background-color: lightgoldenrodyellow;
+}
+.flashcard{
+  padding: 10px 50px;
 }

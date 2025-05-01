@@ -1,0 +1,42 @@
+[
+    {
+        "question": "What is React?",
+        "answer": "React is a JavaScript library for building user interfaces, maintained by Facebook and a community of developers."
+    },
+    {
+        "question": "What are components in React?",
+        "answer": "Components are reusable pieces of UI in React that can be class-based or functional."
+    },
+    {
+        "question": "What is JSX?",
+        "answer": "JSX is a syntax extension for JavaScript that allows you to write HTML-like code inside JavaScript."
+    },
+    {
+        "question": "What is the virtual DOM in React?",
+        "answer": "The virtual DOM is a lightweight representation of the real DOM that React uses to optimize updates and rendering."
+    },
+    {
+        "question": "What are props in React?",
+        "answer": "Props are short for properties and are used to pass data from parent to child components in React."
+    },
+    {
+        "question": "What is state in React?",
+        "answer": "State is an object that represents the dynamic parts of a component and can change over time."
+    },
+    {
+        "question": "What is the difference between state and props?",
+        "answer": "State is managed within a component and can change, while props are passed to a component and are immutable."
+    },
+    {
+        "question": "What is a React Hook?",
+        "answer": "Hooks are functions that let you use state and other React features in functional components."
+    },
+    {
+        "question": "What is the useEffect Hook in React?",
+        "answer": "The useEffect Hook lets you perform side effects in functional components, such as fetching data or updating the DOM."
+    },
+    {
+        "question": "What is the purpose of keys in React lists?",
+        "answer": "Keys help React identify which items in a list have changed, are added, or removed, improving performance."
+    }
+]
