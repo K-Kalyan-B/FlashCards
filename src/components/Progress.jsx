@@ -5,8 +5,8 @@ const Progress = ({ progress,total }) => {
         <div className="progress-container">
             <div
                 className="progress-bar"
-                style={{ width: `${progress}%` }}
-            ></div>
+                style={{ width: `${(progress/total)*100}%` }}
+            >{(progress/total)*100}%</div>
         </div>
     );
 };

@@ -1,6 +1,7 @@
 body { /* Optional: To ensure text is visible on a black background */
   font-family: 'Roboto', sans-serif;
-
+  background-color: lightskyblue;
+  color: white;
 }
 .app {
   display: flex;
@@ -20,16 +21,17 @@ body { /* Optional: To ensure text is visible on a black background */
   justify-content: center;
 }
 .progress-container {
-  width: 100%;
+  width: 90%;
+  border: solid 1px;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
-  height: 20px;
+  height: 100%;
   margin: 10px 0;
 }
 .progress-bar {
   height: 100%;
-  background-color: gray;
+  background-color: lightblue;
   transition: width 0.5s ease-in-out;
 }
 .flash-card-container{
@@ -39,16 +41,30 @@ body { /* Optional: To ensure text is visible on a black background */
   min-height: 300px;
   margin: none;
   min-width: 500px;
-  background-color: lightgoldenrodyellow;
+  background-color: lightseagreen
 }
 .flashcard{
-  padding: 10px 0px;
+  padding: 10px 10px;
   min-width: 500px;
-  min-height: 200px;
+  min-height: 190px;
   align-items: center;
+  color: white;
 }
 .flash-card-buttons{
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   width: 100%;
+}
+.buttons{
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: medium;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.buttons:hover{
+  background-color: lightcyan;
 }

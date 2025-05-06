@@ -9,15 +9,31 @@ const FlashCardContainer = () => {
     const handleFlipped = ()=>{
         setFlipped(!Flipped);
     }
+    const handleNext =  ()=>{
+        if(Flipped){
+            setFlipped(!Flipped);
+        }
+        setCurrentIndex((currentIndex + 1)%flashcards.length);
+    }
+    const handlePrevious =  ()=>{
+        if(Flipped){
+            setFlipped(!Flipped);
+        }
+        setCurrentIndex((currentIndex - 1 + flashcards.length)%flashcards.length);
+    }
+
+
     return (
         <div>
             <h1>Flash Card Container</h1>
             <p>This is the flash card container component.</p>
             <div className="flash-card-container">
-                <Progress progress={currentIndex} total={flashcards.length}/>
+                <Progress progress={currentIndex+1} total={flashcards.length}/>
                 <FlashCard currentIndex = {currentIndex} Flipped = {Flipped}/>
                 <div className="flash-card-buttons">
-                    <button onClick={handleFlipped}>{Flipped ? `Show Answer` : `Hide Answer`}</button>
+                    <button className = "buttons" onClick={handlePrevious}>&lt;&lt; Previous</button>
+                    <button className = "buttons" onClick={handleFlipped}>{Flipped ? `Hide Answer` : `Show Answer`}</button>
+                    <button className = "buttons" onClick={handleNext}>Next &gt;&gt;</button>
                 </div>
             </div>
         </div>
